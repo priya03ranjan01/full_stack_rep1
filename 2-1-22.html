@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.parent{
+            background-color: black;
+            height: 500px;
+        }
+        div.child{
+            height: 100px;
+            width:100px;
+            background-color: blueviolet;
+            transition-duration: 1s;
+        }
+
+        div.parent:hover div.child{
+            transform: translate(500px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Metropolis;
+        }
+        
+        div.parent {
+            background-color: black;
+            height: 500px;
+        }
+        
+        div.child-1 {
+            margin: 50px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #ffbf00;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+        
+        div.child-2 {
+            margin: 50px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #ffbf00;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+        
+        /* div.parent:hover div.child-1,
+        div.parent:hover div.child-2 {
+            transform: translateX(500px);
+        } */
+        div.parent:hover div.child-1 {
+            animation-duration: 1s;
+            animation-name: dance;
+        }
+        
+        @keyframes dance {
+            0% {}
+            100% {
+                transform: translateX(500px);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+    </div>
+
+</body>
+</html>
