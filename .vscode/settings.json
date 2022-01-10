@@ -3,5 +3,6 @@
         "iostream": "cpp",
         "random": "cpp",
         "iosfwd": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5502
 }
